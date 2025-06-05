@@ -1,12 +1,13 @@
-// import { Product } from './models/Product'; 
+/// Note: Product type is imported via fetchProducts() return type, no direct import needed
 import { fetchProducts } from './services/apiService'; 
 import { calculateDiscount } from './utils/dicountCalculator';
 import { calculateTax, getTaxRate } from './utils/taxCalculator';
 import { handleApiError } from './utils/errorHandler'; 
 
+ // Fetch products from API service
 async function main(): Promise<void> {
    try {
-    // Fetch products from API service
+   
     const products = await fetchProducts();
 
     // // Display product details
@@ -30,11 +31,11 @@ async function main(): Promise<void> {
 Original Price: $${product.price.toFixed(2)}
 Discount: $${discountAmount.toFixed(2)} (${product.discountPercentage}% off)
 Price After Discount: $${priceAfterDiscount.toFixed(2)}
-Tax: $${taxAmount.toFixed(2)} (${taxRate}% tax rate)
+Tax: $${taxAmount.toFixed(2)} (${(taxRate * 100).toFixed(2)}% tax rate)
 Final Price: $${finalPrice.toFixed(2)}
 
 `);
-    } // End of for loop
+    } 
   } catch (error) {
     console.error('Error displaying product calculations:', handleApiError(error));
   }

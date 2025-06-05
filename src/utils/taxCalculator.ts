@@ -1,6 +1,6 @@
 
-const STANDARD_TAX_RATE = 0.0475;
-const GROCERY_TAX_RATE = 0.03; // 3%
+const STANDARD_TAX_RATE = 0.0475; // 4.75%
+const GROCERY_TAX_RATE = 0.03;    // 3%
 
 export function calculateTax(price: number, category: string): number {
     if (price < 0) {
@@ -16,7 +16,7 @@ export function calculateTax(price: number, category: string): number {
     }
     return (price * taxRate);
 }
-
+// 
 export function getTaxRate(category: string): number {
     if (category.toLowerCase() === "groceries") {
         return GROCERY_TAX_RATE;
