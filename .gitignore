@@ -1,0 +1,17 @@
+# Node modules (always ignore)
+node_modules/
+
+# Build output (if you're compiling TS to JS)
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# Optional cache files
+*.tsbuildinfo
+.cache/
