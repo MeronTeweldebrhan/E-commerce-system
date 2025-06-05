@@ -87,4 +87,17 @@ Final Price: $1.79
 - Node.js
 - @types/node
 
+## 📚 Useful Resources
+
+These resources were essential in building and debugging this TypeScript-based E-Commerce system:
+
+* MDN Web Docs
+Comprehensive reference for JavaScript, HTTP, APIs, and modern web development standards.
+* TypeScript Documentation
+Official guide and reference for TypeScript features, types, and best practices.
+* Visual Studio Code
+Code editor used for development, with built-in TypeScript support and extensions for linting and formatting.
+* VS Code Autocompletion
+Helped speed up development with IntelliSense, type hints, and quick-fix suggestions.
+
 That's it! Simple and straightforward.
