@@ -1,4 +1,5 @@
 import { dimensions, meta, reviews } from "../types/product-type";
+import { calculateDiscount } from "../utils/dicountCalculator";
 
 export class Product {
   id: number;
